@@ -18,7 +18,7 @@ const DEMO_PERSONAS = [
 export default function LoginPage() {
   const navigate = useNavigate();
   const login = useAuthStore(s => s.login);
-  const [form, setForm] = useState({ email: 'alex@hkfes.com', password: 'Password123!', remember: true });
+  const [form, setForm] = useState({ email: '', password: '', remember: true });
   const [mfa, setMfa] = useState(false);
   const [mfaCode, setMfaCode] = useState('');
   const [error, setError] = useState('');

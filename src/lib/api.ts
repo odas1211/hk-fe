@@ -13,6 +13,7 @@ export const WS_BASE_URL =
     ? `${window.location.protocol === 'https:' ? 'wss:' : 'ws:'}//${window.location.host}/ws/prices`
     : 'ws://hk-be.netlify.app/ws/prices');
 
+
 const readStoredToken = (): string | null => {
   if (typeof localStorage === 'undefined') return null;
   const direct = localStorage.getItem('hkfes_token');

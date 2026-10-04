@@ -224,14 +224,10 @@ export default function LoginPage() {
         </div>
 
         {/* ── Demo Persona Selector Chips ── */}
-        <div style={{
-          marginBottom: '18px',
-          background: 'var(--bg-input)',
-          padding: '12px',
-          borderRadius: 'var(--radius-md)',
-          border: '1px solid var(--border-subtle)',
-        }}>
-          <div style={{
+       
+        
+        
+        {/* <div style={{
             fontSize: '11px',
             color: 'var(--text-muted)',
             fontWeight: 700,
@@ -295,7 +291,7 @@ export default function LoginPage() {
               );
             })}
           </div>
-        </div>
+        </div> */}
 
         {!mfa ? (
           <form onSubmit={handleSubmit} className={styles.form}>

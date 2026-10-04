@@ -7,6 +7,7 @@ export const API_BASE_URL =
     ? '/api/v1'
     : 'http://localhost:4000/api/v1');
 
+
 export const WS_BASE_URL =
   import.meta.env.VITE_WS_URL ||
   (typeof window !== 'undefined' && window.location.hostname !== 'localhost' && window.location.hostname !== '127.0.0.1'

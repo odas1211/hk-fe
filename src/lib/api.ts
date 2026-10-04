@@ -5,13 +5,13 @@ export const API_BASE_URL =
   import.meta.env.VITE_API_URL ||
   (typeof window !== 'undefined' && window.location.hostname !== 'localhost' && window.location.hostname !== '127.0.0.1'
     ? '/api/v1'
-    : 'https://hk-be.netlify.app/api/v1');
+    : 'http://localhost:4000/api/v1');
 
 export const WS_BASE_URL =
   import.meta.env.VITE_WS_URL ||
   (typeof window !== 'undefined' && window.location.hostname !== 'localhost' && window.location.hostname !== '127.0.0.1'
     ? `${window.location.protocol === 'https:' ? 'wss:' : 'ws:'}//${window.location.host}/ws/prices`
-    : 'ws://hk-be.netlify.app/ws/prices');
+    : 'ws://localhost:4000/ws/prices');
 
 
 const readStoredToken = (): string | null => {
